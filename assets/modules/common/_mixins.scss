@@ -1,0 +1,81 @@
+//
+//
+//Greybox placeholder to have an idea of dimmesions and getting used to flex-grid and media queries
+//
+@mixin placeholder-square ($height,$width) {
+  $off-white: #ff0000;
+	height: $height;
+	width: $width;
+	display: flex;
+	flex-wrap:wrap;
+	background-color: $off-white;
+}
+
+//
+//A generic button mixin
+@mixin button{
+  $black: #3d3d3d;
+  background: $white;
+  color: $black;
+  font-size: 20px;
+  width:90%;
+  height: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align:center;
+  border: solid 1px #898989;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.75em;
+}
+
+//
+//A big box ressembling a button, made for email input
+@mixin input-box{
+  background: $white;
+  color: $black;
+  font-size: 12px;
+  width:370px;
+  height: 20px;
+  padding: 15px 20px;
+  text-decoration: none;
+  border: solid 1px $light-grey;
+  margin-top: 40px;
+  margin-bottom: 80px;
+    &:focus{
+      outline: none;
+        
+    }
+
+    &::placeholder{
+      color: $light-grey;
+    }
+}
+
+@mixin popular-dudes{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  bottom: 0px;
+  margin: 5%;
+  overflow: hidden;
+  
+
+  &.relative:hover{
+    display: block;  
+  }
+}
+
+
+@mixin popular-button{
+  @include button;
+    width: 50%;
+    margin: 5% 17%;
+
+    &:hover{
+      display: block;
+    }
+
+}
+
+

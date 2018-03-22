@@ -34,3 +34,19 @@ $indent-amount: 40px !default;
 // However, changing any of the variables above will cause
 // $normalize-vertical-rhythm to be automatically set to true.
 $normalize-vertical-rhythm: false !default;
+
+// Color variables
+$a-link: #727272 !default
+$black: #000000 !default;
+$light-grey: #d2d2d2 !default;
+$logo-red: #ff4747 !default;
+$off-white: #f9f9f9 !default;
+$white: #FFFFFF !default;
+
+// General use variables for box sizes
+$height: 200px !default;
+$width: 100% !default;
+
+// Font Variables
+$Rs: 'Roboto Slab', serif;
+$Rw: 'Raleway', sans-serif;

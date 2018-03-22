@@ -1,0 +1,128 @@
+//
+// "Jumbotron"
+
+.embroided-lady{
+	@include placeholder-square(280px,100%);
+}
+@media screen and (min-width: 992px){
+	.embroided-lady{
+		@include placeholder-square(560px,100%);
+	}
+}
+
+.button{
+	@include button;
+}
+
+//
+//Featured collections
+.ft-collection-1{ font-size: 1.125em;}
+
+.ft-collection-2{ 
+	font-size: 0.75em;
+	margin-top: 20px;
+}
+
+@media screen and(min-width: 992px){
+	.cont-text-dresses{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+}
+
+.man-jacket{
+	@include placeholder-square(280px,100%);
+}
+@media screen and (min-width: 992px){
+	.man-jacket{
+		@include placeholder-square(560px,100%)
+	}
+}
+
+.women-shoes{
+	@include placeholder-square(280px,100%);
+}
+
+.backpack-box{
+	@include placeholder-square(280px,50%);
+	padding-bottom: 30px;
+}
+
+.glasses-box{
+	@include placeholder-square(280px,50%);
+}
+
+//
+// Subscribe to newsletter
+
+.newsletter{
+
+}
+
+input{
+	@include input-box;
+}
+
+//
+// Popular Products
+
+.popular-products{
+	margin-top: 50px;
+}
+
+//
+// Pre-footer / Blog
+.blog-1{
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-2{
+	text-align: left;
+}
+
+.short-line{
+	width: 42px;
+	height:1px;
+	background-color: #3d3d3d;
+}
+
+.short-line-edit{
+	display: flex;
+	align-self: flex-end;
+}
+
+.xs-none{
+	display: none;
+}
+
+@media screen and (min-width: 992px){
+	.xs-none{
+		display: block;
+	}
+	
+}
+
+figure{
+	overflow: hidden;
+}
+figure.relative:hover{
+.popular-dudes{
+	@include popular-dudes;
+	}
+}
+
+.popular-btn{
+	@include popular-button;
+	&:first-child{
+		margin-top: 18%;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+header{
+	font-size: 1.75em;
+	font-family: $Rs;
+}
+
+h1{
+	font-size: 1.3125em;
+	margin:0;
+	padding:0;
+	font-family: $Rw;
+}
+
+
+.logo{
+	height: 50px;
+	width: 50px;
+	background-color: #363636;
+	color: $white;
+	font-size: 53.33px;
+	font-family: $Rw;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+  	float:left;
+  	position: relative;
+  	overflow: hidden;
+
+}
+
+.red{
+	background-color: $logo-red;
+	height:20px;
+	width:20px;
+	position:absolute;
+	bottom:-13px;
+	right:-13px;
+	transform:rotate(45deg);
+}
+
+.logo-text{
+	display: none;
+}
+
+@media screen and (min-width: 992px){
+.logo-text{
+	display: block;
+	font-size: 12px;
+	margin-top: 25px;
+	margin-left: 10px;
+	float: left;
+	}
+}
+
+.hamburger-menu{
+	height: 50px;
+	width: 50px;
+	background-color: #363636;
+	margin-top: 20px;
+  	float:right;
+}
+
+@media screen and (min-width: 992px){
+	.hamburger-menu{
+		position: absolute;
+		right:0px;
+		bottom: 0px;
+	}
+}
+
+.b-menu{
+  height: 4px;
+  width: 40px;
+  background-color:$white;
+  
+  margin: 0 auto;
+  margin-top:10px;
+}
+
+header p{
+	
+	display: block;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 992px){
+	header p{
+		margin: 0;
+		text-align: left;
+	}	
+}
+
+
+
