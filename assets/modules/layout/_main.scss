@@ -1,27 +1,92 @@
 //
 // "Jumbotron"
 
+#embroidedLady{
+	padding: 0px;
+}
+
 .embroided-lady{
 	@include placeholder-square(280px,100%);
+	background-image: url(image/embroided-lady.jpg);
+	background-position-x: -215px;
+    background-position-y: -350px;
 }
 @media screen and (min-width: 992px){
 	.embroided-lady{
 		@include placeholder-square(560px,100%);
+		background-image: url(image/embroided-lady.jpg);
+		background-position-x: -215px;
+    	background-position-y: -350px;
 	}
 }
 
 .button{
+	@media screen and(max-width: 992px) {
+		@include button;
+		    width: 50%;
+	}
 	@include button;
 }
 
+
+
+div[class*="arrow-1"] img{
+	display: none;
+}
+
+@media screen and(min-width: 992px) {
+	div[class*="arrow-1"] img{
+	height: 16px;
+	width: 21px;
+	display: block;
+}
+
+	.left-arrow-1 img{
+	left: -25px;
+    top: 350px;
+	}
+
+	.right-arrow-1 img{
+	left:auto;
+	right: -25px;
+	top: 350px;
+	}
+}
+
+
+
+
 //
 //Featured collections
+
+#sectionFeaturedCollection{
+	margin-top: 60px;
+}
+
+#sectionFeaturedCollection a{
+	text-decoration: none;
+}
+
+#sectionFeaturedCollection span{
+	position: relative;
+}
+
+#featuredBoxLeft{
+	padding:0px;
+}
+
+#featuredBoxRight{
+	padding: 0 0 0 15px;
+}
+
 .ft-collection-1{ font-size: 1.125em;}
 
 .ft-collection-2{ 
 	font-size: 0.75em;
 	margin-top: 20px;
 }
+
+
 
 @media screen and(min-width: 992px){
 	.cont-text-dresses{
@@ -31,26 +96,59 @@
 	}
 }
 
-.man-jacket{
-	@include placeholder-square(280px,100%);
+#manJacket{
+	position: relative;
+	padding-bottom: 100%;
 }
-@media screen and (min-width: 992px){
+
+.man-jacket{
+	@include placeholder-square(0,100%);
+}
+/* @media screen and (min-width: 992px){
 	.man-jacket{
-		@include placeholder-square(560px,100%)
+		@include placeholder-square(0,100%)
 	}
+} */
+
+#womenShoes{
+	position: relative;
+	padding-bottom: 50%;
 }
 
 .women-shoes{
-	@include placeholder-square(280px,100%);
+	@include placeholder-square(0,100%);
+	//background-image: url(image/shoes.jpg);
+}
+
+#backpackBox{
+	position: relative;
+	padding-bottom: 50%;
+	margin-top: 0px
 }
 
 .backpack-box{
-	@include placeholder-square(280px,50%);
+	@include placeholder-square(0,50%);
+	//background-image: url(image/bag.jpg);
 	padding-bottom: 30px;
 }
 
+#glassesBox{
+	position: relative;
+	padding-bottom: 50%;
+	margin-top: 0px;
+}
+
 .glasses-box{
-	@include placeholder-square(280px,50%);
+	@include placeholder-square(0,50%);
+	//background-image: url(image/glasses.jpg);
+}
+
+.link-arrow{
+	height: 5px;
+	width: 13px;
+	top: 8px;
+	right: -20px;
+	left: auto;
 }
 
 //
@@ -67,43 +165,15 @@ input{
 //
 // Popular Products
 
+.section-popular-products img{
+	position: inherit;
+}
+
 .popular-products{
 	margin-top: 50px;
 }
 
 //
-// Pre-footer / Blog
-.blog-1{
-	text-align: right;
-	display: flex;
-	flex-direction: column;
-}
-
-.blog-2{
-	text-align: left;
-}
-
-.short-line{
-	width: 42px;
-	height:1px;
-	background-color: #3d3d3d;
-}
-
-.short-line-edit{
-	display: flex;
-	align-self: flex-end;
-}
-
-.xs-none{
-	display: none;
-}
-
-@media screen and (min-width: 992px){
-	.xs-none{
-		display: block;
-	}
-	
-}
 
 figure{
 	overflow: hidden;
@@ -119,6 +189,17 @@ figure.relative:hover{
 	&:first-child{
 		margin-top: 18%;
 	}
+}
+
+.xs-none{
+	display: none;
+}
+
+@media screen and (min-width: 992px){
+	.xs-none{
+		display: block;
+	}
+	
 }
 
 

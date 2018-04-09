@@ -1,0 +1,65 @@
+//
+// Pre-footer / Blog
+.blog-1{
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 992px){
+	.blog-1{
+		text-align: center;
+	}
+}
+
+.blog-2{
+	text-align: left;
+}
+
+@media screen and (max-width: 992px){
+	.blog-2{
+		text-align: center;
+	}
+}
+
+.blog-title{ font-size: 1.125em;}
+
+.blog-context{ 
+	font-size: 0.75em;
+	margin-top: 20px;
+	display: none;
+}
+
+@media screen and (min-width: 992px){
+	.blog-context{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.short-line{
+		width: 42px;
+		height:1px;
+		background-color: #3d3d3d;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.short-line-edit{
+		display: flex;
+		align-self: flex-end;
+	}
+}
+
+
+.flair-squares{
+	margin: 0 auto;
+}
+
+.flair-squares img{
+	position: relative;
+	height: 18px;
+	width: 42px;
+}
+
+

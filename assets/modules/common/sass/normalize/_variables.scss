@@ -5,6 +5,12 @@
 // before importing the normalize-scss library.
 
 // The font size set on the root html element.
+html,body{font-size: 12px}
+
+@media screen and(min-width: 992px) {
+	html,body{font-size: 16px}
+}
+
 $base-font-size: 16px !default;
 
 // The base line height determines the basic unit of vertical rhythm.

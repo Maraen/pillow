@@ -39,10 +39,10 @@
 	</header>
 	<main>
 		<section>
-			<div class="container row">
+			<div class="container row relative">
 				<div class="line"></div> <!--single line on mobile, double on desktop-->
 
-				<div class="embroided-lady col-xs-12 col-lg-12 row relative"> <!-- col taking full length and taking "2 block" height, image as background-->
+				<div id="embroidedLady" class="embroided-lady col-xs-12 col-lg-12 row relative"> <!-- col taking full length and taking "2 block" height, image as background-->
 					<div class="col-xs-6"></div>
 					<div class="cont-text-dresses col-xs-6"><!--in bottom right half,-->
 						<p>
@@ -58,15 +58,14 @@
 					</div>
 				</div>
 
-				<div><!--small arrow to the left and right, going out of the container-->
-					<div>
-						<img src="" alt=""><!--Those should be font icons not images, pref in svg-->
+				
+					<div class="left-arrow-1">
+						<img src="assets/image/left-arrow.png" alt="left arrow"><!--Those should be font icons not images, pref in svg-->
 					</div>
-					<div>
-						<img src="" alt="">
+					<div class="right-arrow-1">
+						<img src="assets/image/right-arrow.png" alt="right arrow">
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<section> <!--section inbetween featured collections-->
@@ -80,273 +79,282 @@
 			</div>
 		</section>
 
-		<section><!--Window shopping area-->
+		<section id="sectionFeaturedCollection"><!--Window shopping area-->
 			<div class="container row">
-				<div class="col-md-6 col-xs-12 row no-pad">
-					<div class="man-jacket col-md-12"><!--Man jacket width is half a screen on desktop and 2 blocks of height-->
+				<div id="featuredBoxLeft" class="col-md-6 col-xs-12 row">
+					<div id="manJacket" class="man-jacket col-md-12"><!--Man jacket width is half a screen on desktop and 2 blocks of height-->
 						<figure>
-							<img src="" alt="">
+							<img src="assets/image/jacket.jpg" alt="jacket">
 						</figure>
 						<p>
 							<span class="uppercase">
 								Man's jacket
 							</span>
+						</br>
+							<span><a href="">View Collection</a><img class="link-arrow" src="assets/image/link-arrow.png"></span>
 						</p>
 
 						<div> <!--alligned top left, always-->
-							<span><a href="">View Collection</a></span>
+							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-12 row no-pad">
-					<div class="women-shoes col-md-16">
+				<div id="featuredBoxRight" class="col-md-6 col-xs-12 row">
+					<div id="womenShoes" class="women-shoes col-md-12">
 						<div><!--women shoes width is half a screen on desktop and 1 block of height-->
 							<figure>
-								<img src="" alt="">
+								<img src="assets/image/shoes.jpg" alt="shoes">
 							</figure>
 							<p>
 								<span class="uppercase">
 									Women's shoes
 								</span>
+							</br>
+								<span><a href="">View Collection</a><img class="link-arrow" src="assets/image/link-arrow.png"></span>
 							</p>
 
 							<div> <!--alligned top left, always-->
-								<span><a href="">View Collection</a></span>
+								
 							</div>
 						</div>
 					</div>
 
-					<div class="backpack-box col-xs-6"><!--Backpack width is quarter a screen on desktop and 1 block of height-->
+					<div id="backpackBox" class="backpack-box col-xs-6"><!--Backpack width is quarter a screen on desktop and 1 block of height-->
 						<figure>
-							<img src="" alt="">
+							<img src="assets/image/bag.jpg" alt="bag">
 						</figure>
 						<p>
 							<span class="uppercase">
 								Backpack
 							</span>
+						</br>
+							<span><a href="">View Collection</a><img class="link-arrow" src="assets/image/link-arrow.png"></span>
 						</p>
 
 						<div> <!--alligned top left, always-->
-							<span><a href="">View Collection</a></span>
+							
 						</div>
 
 
 					</div>
 
-					<div class="glasses-box col-xs-6"><!--Glasses width is quarter a screen on desktop and 1 block of height-->
+					<div id="glassesBox" class="glasses-box col-xs-6"><!--Glasses width is quarter a screen on desktop and 1 block of height-->
 						<figure>
-							<img src="" alt="">
+							<img src="assets/image/glasses.jpg" alt="glasses">
 						</figure>
 						<p>
 							<span class="uppercase">
 								Glasses
 							</span>
+						</br>
+							<span><a href="">View Collection</a><img class="link-arrow" src="assets/image/link-arrow.png"></span>
 						</p>
 
 						<div> <!--alligned top left, always-->
-							<span><a href="">View Collection</a></span>
+							
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="newsletter text-align-center">
+						<div class="RS ft-collection-1">
+							<p><span class="uppercase">Subscribe our newsletter</span></p>
+						</div>
+						<div class="Rs ft-collection-2">
+							<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur. Suspendisste sit amet fringilla leo</p>
+						</div>
+						<div>
+							<input type="text" placeholder="Email address">
+							<div></div><!--icon '+' -->
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="section-popular-products">
+				<div class="container">
+					<div class="line"></div>
+
+					<div class="popular-products text-align-center">
+						<div>
+							<p><span class="uppercase RS ft-collection-1">Popular products</span></p>
+						</div>
+						<div class="Rs ft-collection-2">
+							<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container row">
+
+					<div class="col-md-3 col-xs-6">
+						<figure class="relative">
+							<img src="assets/image/dude1.jpg" alt="">
+							<div class="popular-dudes absolute">
+								<div>
+									<div class="popular-btn uppercase">Add to Cart
+									</div>
+									<div class="popular-btn uppercase">
+										Quick View
+									</div>
+									<div class="popular-btn uppercase">
+										Shop Details
+									</div>
+								</div>
+							</div>
+						</figure>
+						<div class="RS">
+							<p>Check T-shirt</p>
+						</div>
+						<div>
+							<!--stars for rating-->
+						</div>
+						<div class="Rs">
+							$30.00
+						</div>
+					</div>
+
+					<div class="col-md-3 col-xs-6">
+						<figure class="relative">
+
+							<img src="assets/image/dude2.jpg" alt="">
+							<div class="popular-dudes absolute">
+								<div>
+									<div class="popular-btn uppercase">Add to Cart
+									</div>
+									<div class="popular-btn uppercase">
+										Quick View
+									</div>
+									<div class="popular-btn uppercase">
+										Shop Details
+									</div>
+								</div>
+							</div>
+						</figure>
+						<div class="RS">
+							<p>Check T-shirt</p>
+						</div>
+						<div>
+							<!--stars for rating-->
+						</div>
+						<div class="Rs">
+							$30.00
+						</div>
+					</div>
+
+					<div class="col-md-3 xs-none">
+						<figure class="relative">
+
+							<img src="assets/image/dude3.jpg" alt="">
+							<div class="popular-dudes absolute">
+								<div>
+									<div class="popular-btn uppercase">Add to Cart
+									</div>
+									<div class="popular-btn uppercase">
+										Quick View
+									</div>
+									<div class="popular-btn uppercase">
+										Shop Details
+									</div>
+								</div>
+							</div>
+						</figure>
+						<div class="RS">
+							<p>Check T-shirt</p>
+						</div>
+						<div>
+							<!--stars for rating-->
+						</div>
+						<div class="Rs">
+							$30.00
+						</div>
+					</div>
+
+					<div class="col-md-3 xs-none">
+						<figure class="relative">
+
+							<img src="assets/image/dude4.jpg" alt="">
+							<div class="popular-dudes absolute">
+								<div>
+									<div class="popular-btn uppercase">Add to Cart
+									</div>
+									<div class="popular-btn uppercase">
+										Quick View
+									</div>
+									<div class="popular-btn uppercase">
+										Shop Details
+									</div>
+								</div>
+							</div>
+						</figure>
+						<div class="RS">
+							<p>Check T-shirt</p>
+						</div>
+						<div>
+							<!--stars for rating-->
+						</div>
+						<div class="Rs">
+							$30.00
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="line"></div>
+
+					<div class="text-align-center RS ft-collection-1">
+						<p><span class="uppercase">More entries from blog</span></p>
+					</div>
+				</div>
+				<div class="container row">
+
+					<div class="col-xs-6 blog-1">
+						<p class="Rs blog-title">
+							Need a WordPress Theme Review Service? Check out ThemeReview.co!
+						</p>
+						<div class="short-line short-line-edit"></div>
+						<p class="Rs blog-context">
+							Post by <span class="RS">k3nnyart</span>    /    12.5.2015    /    WordPress Product Reviews
+						</p>
+					</div>
+
+					<div class="col-xs-6 blog-2">
+						<p class="Rs blog-title">A Quick Look At Ninja – Upcoming Fashion WooCommerce Theme</p>
+						<div class="short-line"></div>
+						<p class="Rs blog-context">
+							Post by <span class="RS">k3nnyart</span>    /    20.5.2015    /    WooRockets News
+						</p>
+					</div>
+
+					<div class="flair-squares">
+						<img src="assets/image/pre-footer-square.png" alt="squares"><!--Flair small squares-->
+					</div>
+					<div class="line"></div>
+				</div>
+
 			</div>
 		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="text-align-center">
+				<div><!-- social icons-->
 
-		<section>
-			<div class="container">
-				<div class="newsletter text-align-center">
-					<div class="RS ft-collection-1">
-						<p><span class="uppercase">Subscribe our newsletter</span></p>
-					</div>
-					<div class="Rs ft-collection-2">
-						<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur. Suspendisste sit amet fringilla leo</p>
-					</div>
-					<div>
-						<input type="text" placeholder="Email address">
-						<div></div><!--icon '+' -->
-					</div>
 				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="container">
-				<div class="line"></div>
-
-				<div class="popular-products text-align-center">
-					<div>
-						<p><span class="uppercase RS ft-collection-1">Popular products</span></p>
-					</div>
-					<div class="Rs ft-collection-2">
-						<p>Duis eget malesuada metus. Donec fringilla suscipit efficitur.</p>
-					</div>
-				</div>
-			</div>
-			<div class="container row">
-
-				<div class="col-md-3 col-xs-6">
-					<figure class="relative">
-						<img src="assets/image/dude1.jpg" alt="">
-						<div class="popular-dudes absolute">
-							<div>
-								<div class="popular-btn uppercase">Add to Cart
-								</div>
-								<div class="popular-btn uppercase">
-									Quick View
-								</div>
-								<div class="popular-btn uppercase">
-									Shop Details
-								</div>
-							</div>
-						</div>
-					</figure>
-					<div class="RS">
-						<p>Check T-shirt</p>
-					</div>
-					<div>
-						<!--stars for rating-->
-					</div>
-					<div class="Rs">
-						$30.00
-					</div>
-				</div>
-
-				<div class="col-md-3 col-xs-6">
-					<figure class="relative">
-						
-						<img src="assets/image/dude2.jpg" alt="">
-						<div class="popular-dudes absolute">
-							<div>
-								<div class="popular-btn uppercase">Add to Cart
-								</div>
-								<div class="popular-btn uppercase">
-									Quick View
-								</div>
-								<div class="popular-btn uppercase">
-									Shop Details
-								</div>
-							</div>
-						</div>
-					</figure>
-					<div class="RS">
-						<p>Check T-shirt</p>
-					</div>
-					<div>
-						<!--stars for rating-->
-					</div>
-					<div class="Rs">
-						$30.00
-					</div>
-				</div>
-
-				<div class="col-md-3 xs-none">
-					<figure class="relative">
-						
-						<img src="assets/image/dude3.jpg" alt="">
-						<div class="popular-dudes absolute">
-							<div>
-								<div class="popular-btn uppercase">Add to Cart
-								</div>
-								<div class="popular-btn uppercase">
-									Quick View
-								</div>
-								<div class="popular-btn uppercase">
-									Shop Details
-								</div>
-							</div>
-						</div>
-					</figure>
-					<div class="RS">
-						<p>Check T-shirt</p>
-					</div>
-					<div>
-						<!--stars for rating-->
-					</div>
-					<div class="Rs">
-						$30.00
-					</div>
-				</div>
-
-				<div class="col-md-3 xs-none">
-					<figure class="relative">
-						
-						<img src="assets/image/dude4.jpg" alt="">
-						<div class="popular-dudes absolute">
-							<div>
-								<div class="popular-btn uppercase">Add to Cart
-								</div>
-								<div class="popular-btn uppercase">
-									Quick View
-								</div>
-								<div class="popular-btn uppercase">
-									Shop Details
-								</div>
-							</div>
-						</div>
-					</figure>
-					<div class="RS">
-						<p>Check T-shirt</p>
-					</div>
-					<div>
-						<!--stars for rating-->
-					</div>
-					<div class="Rs">
-						$30.00
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div class="container">
-				<div class="line"></div>
-
-				<div class="text-align-center RS ft-collection-1">
-					<p><span class="uppercase">More entries from blog</span></p>
-				</div>
-			</div>
-			<div class="container row">
-
-				<div class="col-xs-6 blog-1">
-					<p class="Rs ft-collection-1">
-						Need a WordPress Theme Review Service? Check out ThemeReview.co!
-					</p>
-					<div class="short-line short-line-edit"></div>
-					<p class="Rs ft-collection-2">
-						Post by <span class="RS">k3nnyart</span>    /    12.5.2015    /    WordPress Product Reviews
+				<div class="Rs">
+					<p>Copyright © 2015 Wordpress Themes by <b>WooRockets.com</b>
+						</br>
+						All rights reserved.
 					</p>
 				</div>
-
-				<div class="col-xs-6 blog-2">
-					<p class="Rs ft-collection-1">A Quick Look At Ninja – Upcoming Fashion WooCommerce Theme</p>
-					<div class="short-line"></div>
-					<p class="Rs ft-collection-2">
-						Post by <span class="RS">k3nnyart</span>    /    20.5.2015    /    WooRockets News
-					</p>
-				</div>
-
-				<div>
-					<!--Flair small squares-->
-				</div>
-				<div class="line"></div>
 			</div>
-			
 		</div>
-	</section>
-</main>
-<footer>
-	<div class="container">
-		<div class="text-align-center">
-			<div><!-- social icons-->
-
-			</div>
-			<div>
-				<p>Copyright © 2015 Wordpress Themes by WooRockets.com
-					All rights reserved.
-				</p>
-			</div>
-		</div>
-	</div>
-</footer>
+	</footer>
 
 </body>		
 </html>

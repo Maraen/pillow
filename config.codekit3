@@ -79,6 +79,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/image\/embroided-lady.png": {
+		"ft": 32768,
+		"iS": 508533,
+		"oA": 0,
+		"oAP": "\/assets\/image\/embroided-lady.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/image\/glasses.jpg": {
 		"ft": 16384,
 		"iS": 20065,
@@ -97,6 +108,50 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/image\/left-arrow.png": {
+		"ft": 32768,
+		"iS": 178,
+		"oA": 0,
+		"oAP": "\/assets\/image\/left-arrow.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/image\/link-arrow.png": {
+		"ft": 32768,
+		"iS": 453,
+		"oA": 0,
+		"oAP": "\/assets\/image\/link-arrow.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/image\/pre-footer-square.png": {
+		"ft": 32768,
+		"iS": 359,
+		"oA": 0,
+		"oAP": "\/assets\/image\/pre-footer-square.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/image\/right-arrow.png": {
+		"ft": 32768,
+		"iS": 181,
+		"oA": 0,
+		"oAP": "\/assets\/image\/right-arrow.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/image\/shoes.jpg": {
@@ -213,6 +268,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/modules\/layout\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/modules\/layout\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/modules\/layout\/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -235,6 +303,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/modules\/layout\/_main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/modules\/layout\/_prefooter.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/modules\/layout\/_prefooter.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

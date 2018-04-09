@@ -1,3 +1,10 @@
+html, body {
+  font-size: 12px; }
+
+@media screen and (min-width: 992px) {
+  html, body {
+    font-size: 16px; } }
+
 body {
   margin: 0; }
 
@@ -10,7 +17,6 @@ body {
   margin: 0; }
 
 div[class*="col-"] {
-  min-height: 200px;
   background-clip: content-box;
   margin: 15px 0;
   padding: 0 15px;
@@ -191,7 +197,11 @@ figure {
 
 img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1; }
 
 header {
   font-size: 1.75em;
@@ -260,7 +270,7 @@ h1 {
 
 header p {
   display: block;
-  width: 700px;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   padding-top: 90px;
@@ -271,12 +281,17 @@ header p {
     margin: 0;
     text-align: left; } }
 
+#embroidedLady {
+  padding: 0px; }
+
 .embroided-lady {
   height: 280px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ff0000; }
+  background-image: url(image/embroided-lady.jpg);
+  background-position-x: -215px;
+  background-position-y: -350px; }
 
 @media screen and (min-width: 992px) {
   .embroided-lady {
@@ -284,7 +299,9 @@ header p {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ff0000; } }
+    background-image: url(image/embroided-lady.jpg);
+    background-position-x: -215px;
+    background-position-y: -350px; } }
 
 .button {
   background: #FFFFFF;
@@ -298,6 +315,51 @@ header p {
   border: solid 1px #898989;
   font-family: 'Roboto Slab', serif;
   font-size: 0.75em; }
+  @media screen and (max-width: 992px) {
+    .button {
+      background: #FFFFFF;
+      color: #3d3d3d;
+      font-size: 20px;
+      width: 90%;
+      height: 20px;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-align: center;
+      border: solid 1px #898989;
+      font-family: 'Roboto Slab', serif;
+      font-size: 0.75em;
+      width: 50%; } }
+
+div[class*="arrow-1"] img {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  div[class*="arrow-1"] img {
+    height: 16px;
+    width: 21px;
+    display: block; }
+  .left-arrow-1 img {
+    left: -25px;
+    top: 350px; }
+  .right-arrow-1 img {
+    left: auto;
+    right: -25px;
+    top: 350px; } }
+
+#sectionFeaturedCollection {
+  margin-top: 60px; }
+
+#sectionFeaturedCollection a {
+  text-decoration: none; }
+
+#sectionFeaturedCollection span {
+  position: relative; }
+
+#featuredBoxLeft {
+  padding: 0px; }
+
+#featuredBoxRight {
+  padding: 0 0 0 15px; }
 
 .ft-collection-1 {
   font-size: 1.125em; }
@@ -312,48 +374,66 @@ header p {
     top: 50%;
     left: 50%; } }
 
+#manJacket {
+  position: relative;
+  padding-bottom: 100%; }
+
 .man-jacket {
-  height: 280px;
+  height: 0;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #ff0000; }
+  flex-wrap: wrap; }
 
-@media screen and (min-width: 992px) {
-  .man-jacket {
-    height: 560px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ff0000; } }
+/* @media screen and (min-width: 992px){
+	.man-jacket{
+		@include placeholder-square(0,100%)
+	}
+} */
+#womenShoes {
+  position: relative;
+  padding-bottom: 50%; }
 
 .women-shoes {
-  height: 280px;
+  height: 0;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #ff0000; }
+  flex-wrap: wrap; }
+
+#backpackBox {
+  position: relative;
+  padding-bottom: 50%;
+  margin-top: 0px; }
 
 .backpack-box {
-  height: 280px;
+  height: 0;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ff0000;
   padding-bottom: 30px; }
 
+#glassesBox {
+  position: relative;
+  padding-bottom: 50%;
+  margin-top: 0px; }
+
 .glasses-box {
-  height: 280px;
+  height: 0;
   width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #ff0000; }
+  flex-wrap: wrap; }
+
+.link-arrow {
+  height: 5px;
+  width: 13px;
+  top: 8px;
+  right: -20px;
+  left: auto; }
 
 input {
   background: #FFFFFF;
   color: #000000;
   font-size: 12px;
-  width: 370px;
+  width: 31%;
   height: 20px;
   padding: 15px 20px;
   text-decoration: none;
@@ -365,32 +445,11 @@ input {
   input::placeholder {
     color: #d2d2d2; }
 
+.section-popular-products img {
+  position: inherit; }
+
 .popular-products {
   margin-top: 50px; }
-
-.blog-1 {
-  text-align: right;
-  display: flex;
-  flex-direction: column; }
-
-.blog-2 {
-  text-align: left; }
-
-.short-line {
-  width: 42px;
-  height: 1px;
-  background-color: #3d3d3d; }
-
-.short-line-edit {
-  display: flex;
-  align-self: flex-end; }
-
-.xs-none {
-  display: none; }
-
-@media screen and (min-width: 992px) {
-  .xs-none {
-    display: block; } }
 
 figure {
   overflow: hidden; }
@@ -418,11 +477,74 @@ figure.relative:hover .popular-dudes {
   border: solid 1px #898989;
   font-family: 'Roboto Slab', serif;
   font-size: 0.75em;
+  padding: 2.5% 9%;
   width: 50%;
   margin: 5% 17%; }
+  @media screen and (min-width: 992px) {
+    .popular-btn {
+      padding: 7.5% 9%; } }
   .popular-btn:hover {
-    display: block; }
+    display: block;
+    cursor: pointer; }
   .popular-btn:first-child {
     margin-top: 18%; }
+
+.xs-none {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  .xs-none {
+    display: block; } }
+
+.blog-1 {
+  text-align: right;
+  display: flex;
+  flex-direction: column; }
+
+@media screen and (max-width: 992px) {
+  .blog-1 {
+    text-align: center; } }
+
+.blog-2 {
+  text-align: left; }
+
+@media screen and (max-width: 992px) {
+  .blog-2 {
+    text-align: center; } }
+
+.blog-title {
+  font-size: 1.125em; }
+
+.blog-context {
+  font-size: 0.75em;
+  margin-top: 20px;
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  .blog-context {
+    display: block; } }
+
+@media screen and (min-width: 992px) {
+  .short-line {
+    width: 42px;
+    height: 1px;
+    background-color: #3d3d3d; } }
+
+@media screen and (min-width: 992px) {
+  .short-line-edit {
+    display: flex;
+    align-self: flex-end; } }
+
+.flair-squares {
+  margin: 0 auto; }
+
+.flair-squares img {
+  position: relative;
+  height: 18px;
+  width: 42px; }
+
+footer p {
+  color: #3d3d3d;
+  font-size: 0.875em; }
 
 /*# sourceMappingURL=styles.css.map */
